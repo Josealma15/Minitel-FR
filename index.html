@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minitel — L'Internet avant Internet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- BOOT SCREEN -->
+  <div id="boot-screen">
+    <div class="boot-content">
+      <div class="boot-logo">MINITEL</div>
+      <div class="boot-sub">RÉSEAU TRANSPAC — FRANCE TÉLÉCOM</div>
+      <div class="boot-line" id="boot-line-1"></div>
+      <div class="boot-line" id="boot-line-2"></div>
+      <div class="boot-line" id="boot-line-3"></div>
+      <div class="boot-bar-wrap"><div class="boot-bar" id="boot-bar"></div></div>
+      <div class="boot-skip">[ Appuyez sur ENTRÉE pour continuer ]</div>
+    </div>
+    <div class="scanlines"></div>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div id="main-site" class="hidden">
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-code">3615 <span class="nav-brand">MINITEL</span></div>
+      <ul class="nav-links">
+        <li><a href="#definition" data-code="01">DÉFINITION</a></li>
+        <li><a href="#services" data-code="02">SERVICES</a></li>
+        <li><a href="#chiffres" data-code="03">CHIFFRES</a></li>
+        <li><a href="#chute" data-code="04">LA CHUTE</a></li>
+        <li><a href="#conclusion" data-code="05">CONCLUSION</a></li>
+      </ul>
+      <div class="nav-time" id="nav-time"></div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="crt-overlay"></div>
+      <div class="scanlines"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">FRANCE · 1982 · FRANCE TÉLÉCOM</div>
+        <h1 class="hero-title">
+          <span class="hero-title-main">MINITEL</span>
+          <span class="hero-title-sub">L'Internet avant Internet</span>
+        </h1>
+        <div class="hero-terminal">
+          <span class="terminal-prompt">></span>
+          <span class="terminal-text" id="hero-typing"></span>
+          <span class="cursor-blink">█</span>
+        </div>
+        <div class="hero-scroll-hint">↓ DÉFILER POUR EXPLORER ↓</div>
+      </div>
+      <div class="hero-device">
+        <div class="device-screen">
+          <div class="device-header">* BIENVENUE SUR MINITEL *</div>
+          <div class="device-body">
+            <div class="device-line">3615 SNCF ........... TRAINS</div>
+            <div class="device-line">3615 METEO .......... MÉTÉO</div>
+            <div class="device-line">3614 BANQUE ......... ARGENT</div>
+            <div class="device-line">3615 ULLA ........... MESSAGES</div>
+            <div class="device-line blink-line">_ ENTREZ VOTRE CODE _</div>
+          </div>
+        </div>
+        <div class="device-keyboard">
+          <div class="key-row">
+            <span class="key">ENVOI</span><span class="key">RETOUR</span><span class="key">SUITE</span>
+          </div>
+          <div class="key-row">
+            <span class="key wide">CORRECTION</span><span class="key wide">ANNULATION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: DÉFINITION -->
+    <section id="definition" class="section">
+      <div class="section-code">01</div>
+      <div class="section-inner">
+        <div class="section-label">DÉFINITION DU THÈME</div>
+        <h2 class="section-title">Qu'est-ce que<br/>le Minitel ?</h2>
+        <div class="definition-grid">
+          <div class="def-main">
+            <p class="def-text">Le <strong>Minitel</strong> est un système de communication électronique créé en <strong>France en 1982</strong> par France Télécom. C'était un terminal — un petit écran avec un clavier — connecté à un réseau national appelé <em>Transpac</em>.</p>
+            <p class="def-text">Il permettait aux citoyens d'accéder à des services numériques depuis leur maison : acheter, réserver, s'informer, communiquer. Tout ça <strong>15 ans avant qu'Internet devienne populaire.</strong></p>
+            <div class="question-box">
+              <div class="qbox-label">❓ QUESTION GUIDÉE</div>
+              <p class="qbox-text">Comment le Minitel a-t-il changé la vie quotidienne en France avant l'arrivée d'Internet ?</p>
+            </div>
+          </div>
+          <div class="def-timeline">
+            <div class="tl-item">
+              <div class="tl-year">1978</div>
+              <div class="tl-dot"></div>
+              <div class="tl-text">Projet Télématique — idée lancée par le gouvernement français</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">1982</div>
+              <div class="tl-dot tl-dot--accent"></div>
+              <div class="tl-text">Lancement officiel du Minitel en France</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">1990</div>
+              <div class="tl-dot"></div>
+              <div class="tl-text">Apogée — 25 millions d'utilisateurs actifs</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">1995</div>
+              <div class="tl-dot"></div>
+              <div class="tl-text">Internet arrive en France — la concurrence commence</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">2012</div>
+              <div class="tl-dot tl-dot--red"></div>
+              <div class="tl-text">Arrêt définitif du réseau Minitel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICES (Interactive Minitel sim) -->
+    <section id="services" class="section section--dark">
+      <div class="section-code">02</div>
+      <div class="section-inner">
+        <div class="section-label">LES SERVICES</div>
+        <h2 class="section-title">Que pouvait-on<br/>faire avec le Minitel ?</h2>
+        <div class="services-layout">
+          <div class="minitel-sim">
+            <div class="sim-bezel">
+              <div class="sim-screen" id="sim-screen">
+                <div class="sim-header" id="sim-header">* MINITEL SERVICES *</div>
+                <div class="sim-content" id="sim-content">
+                  <div class="sim-line">Choisissez un service :</div>
+                  <div class="sim-line sim-empty"></div>
+                  <div class="sim-line">► Cliquez sur un service</div>
+                  <div class="sim-line sim-empty"></div>
+                  <div class="sim-line">_ _ _ _ _ _ _ _ _ _ _ _</div>
+                </div>
+              </div>
+              <div class="sim-brand">MINITEL 1B</div>
+            </div>
+          </div>
+          <div class="services-list">
+            <button class="service-btn" data-code="3615 SNCF" data-title="* 3615 SNCF — VOYAGES *" data-content="RÉSERVATION BILLETS DE TRAIN|Date : __ / __ / __|Départ : PARIS LYON|Arrivée : MARSEILLE|Heure : 08h30|Prix : 245 FF|► CONFIRMER RÉSERVATION">
+              <span class="svc-code">3615 SNCF</span>
+              <span class="svc-name">Réservation de trains</span>
+              <span class="svc-arrow">→</span>
+            </button>
+            <button class="service-btn" data-code="3615 METEO" data-title="* 3615 MÉTÉO — FRANCE *" data-content="PRÉVISIONS MÉTÉO — PARIS|Aujourd'hui : ☁ Nuageux 14°C|Demain : ☀ Ensoleillé 18°C|Après-demain : 🌧 Pluie 11°C|Vent : 25 km/h Nord-Ouest|Humidité : 72%">
+              <span class="svc-code">3615 MÉTÉO</span>
+              <span class="svc-name">Prévisions météo</span>
+              <span class="svc-arrow">→</span>
+            </button>
+            <button class="service-btn" data-code="3614 BANQUE" data-title="* 3614 BANQUE — COMPTE *" data-content="CONSULTATION BANCAIRE|Compte : **** **** 4821|Solde : 3.420,50 FF|Dernière opération :|  - Supermarché : -120 FF|  - Salaire : +6.000 FF|► VOIR HISTORIQUE COMPLET">
+              <span class="svc-code">3614 BANQUE</span>
+              <span class="svc-name">Consultation bancaire</span>
+              <span class="svc-arrow">→</span>
+            </button>
+            <button class="service-btn" data-code="3615 ULLA" data-title="* 3615 ULLA — MESSAGERIE *" data-content="MESSAGERIE ÉLECTRONIQUE|Boîte de réception : 3 messages|─────────────────────|De : Pierre_75 — 14h22|'Bonjour ! Tu viens ce soir ?'|─────────────────────|► RÉPONDRE  ► NOUVEAU MSG">
+              <span class="svc-code">3615 ULLA</span>
+              <span class="svc-name">Messagerie & rencontres</span>
+              <span class="svc-arrow">→</span>
+            </button>
+            <button class="service-btn" data-code="11 ANNUAIRE" data-title="* 11 — ANNUAIRE NATIONAL *" data-content="ANNUAIRE ÉLECTRONIQUE|Recherche : DUPONT PARIS|─────────────────────|DUPONT Jean — 01 42 36 18 44|  14 Rue de Rivoli, Paris 75001|DUPONT Marie — 01 43 21 07 55|  8 Av. Victor Hugo, Paris 75016">
+              <span class="svc-code">11 ANNUAIRE</span>
+              <span class="svc-name">Annuaire téléphonique</span>
+              <span class="svc-arrow">→</span>
+            </button>
+            <button class="service-btn" data-code="3615 LOTO" data-title="* 3615 LOTO — RÉSULTATS *" data-content="RÉSULTATS DU LOTO|Tirage du Mercredi 14/04/1993|─────────────────────|Numéros gagnants :|  7 — 14 — 23 — 36 — 42|Numéro complémentaire : 9|Jackpot : 12.000.000 FF !">
+              <span class="svc-code">3615 LOTO</span>
+              <span class="svc-name">Résultats du loto</span>
+              <span class="svc-arrow">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="services-note">💡 <em>En 1990, il existait plus de 23 000 services différents sur le réseau Minitel.</em></div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CHIFFRES -->
+    <section id="chiffres" class="section">
+      <div class="section-code">03</div>
+      <div class="section-inner">
+        <div class="section-label">DONNÉES & STATISTIQUES</div>
+        <h2 class="section-title">Le Minitel<br/>en chiffres</h2>
+        <div class="stats-grid">
+          <div class="stat-card" data-target="1982" data-suffix="" data-label="Année de lancement" data-sub="15 ans avant Internet populaire">
+            <div class="stat-number" data-val="1982">1982</div>
+            <div class="stat-label">Année de lancement</div>
+            <div class="stat-sub">15 ans avant Internet populaire</div>
+          </div>
+          <div class="stat-card stat-card--accent" data-label="Utilisateurs au maximum" data-sub="Plus que la population de l'Australie">
+            <div class="stat-number" data-val="25" data-suffix="M">0</div>
+            <div class="stat-label">Utilisateurs au maximum</div>
+            <div class="stat-sub">Plus que la population de l'Australie</div>
+          </div>
+          <div class="stat-card" data-label="Ans de service continu" data-sub="De 1982 jusqu'au 30 juin 2012">
+            <div class="stat-number" data-val="30" data-suffix=" ans">0</div>
+            <div class="stat-label">Ans de service continu</div>
+            <div class="stat-sub">De 1982 jusqu'au 30 juin 2012</div>
+          </div>
+          <div class="stat-card stat-card--accent" data-label="Terminaux distribués" data-sub="Gratuits pour chaque abonné">
+            <div class="stat-number" data-val="9" data-suffix="M">0</div>
+            <div class="stat-label">Terminaux distribués</div>
+            <div class="stat-sub">Gratuits pour chaque abonné</div>
+          </div>
+          <div class="stat-card" data-label="Services disponibles" data-sub="En 1990 : trains, banque, jeux, rencontres...">
+            <div class="stat-number" data-val="23000" data-suffix="+">0</div>
+            <div class="stat-label">Services disponibles</div>
+            <div class="stat-sub">En 1990 : trains, banque, jeux, rencontres...</div>
+          </div>
+          <div class="stat-card stat-card--accent" data-label="Revenus annuels (1994)" data-sub="Un business model rentable et durable">
+            <div class="stat-number" data-val="6" data-suffix="Md FF">0</div>
+            <div class="stat-label">Revenus annuels (1994)</div>
+            <div class="stat-sub">Un business model rentable et durable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: LA CHUTE -->
+    <section id="chute" class="section section--dark">
+      <div class="section-code">04</div>
+      <div class="section-inner">
+        <div class="section-label">LA CHUTE</div>
+        <h2 class="section-title">Pourquoi le Minitel<br/>a-t-il disparu ?</h2>
+        <div class="chute-layout">
+          <div class="chute-text">
+            <p class="chute-intro">Le Minitel a été arrêté le <strong>30 juin 2012</strong>. Son histoire est un paradoxe fascinant :</p>
+            <div class="paradox-box">
+              <div class="paradox-title">⚠ LE PARADOXE DU SUCCÈS</div>
+              <p>La France était si satisfaite du Minitel qu'elle a été <strong>plus lente à adopter Internet</strong> dans les années 1990. Une excellente technologie peut devenir un obstacle à l'innovation future.</p>
+              <p class="paradox-code">// En programmation, on appelle ça un "legacy problem"</p>
+            </div>
+          </div>
+          <div class="vs-comparison">
+            <div class="vs-col vs-col--minitel">
+              <div class="vs-header">MINITEL</div>
+              <ul class="vs-list">
+                <li>Centralisé — contrôlé par l'État</li>
+                <li>Terminal physique requis</li>
+                <li>Services payants au temps de connexion</li>
+                <li>Réseau uniquement français</li>
+                <li>Vitesse : 1 200 bits/s</li>
+                <li>Contenu limité et approuvé</li>
+              </ul>
+              <div class="vs-fate vs-fate--lost">ARRÊTÉ EN 2012</div>
+            </div>
+            <div class="vs-divider">VS</div>
+            <div class="vs-col vs-col--internet">
+              <div class="vs-header">INTERNET</div>
+              <ul class="vs-list">
+                <li>Décentralisé — personne ne contrôle</li>
+                <li>Accessible depuis n'importe quel PC</li>
+                <li>Accès mensuel à prix fixe</li>
+                <li>Réseau mondial</li>
+                <li>Vitesse : 56 000 bits/s (modem)</li>
+                <li>Contenu illimité et libre</li>
+              </ul>
+              <div class="vs-fate vs-fate--won">TOUJOURS ACTIF</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONCLUSION -->
+    <section id="conclusion" class="section">
+      <div class="section-code">05</div>
+      <div class="section-inner">
+        <div class="section-label">CONCLUSION & RÉFLEXION</div>
+        <h2 class="section-title">Ce que le Minitel<br/>nous enseigne</h2>
+        <div class="conclusion-grid">
+          <div class="reflection-card">
+            <div class="rc-icon">🏆</div>
+            <div class="rc-title">Un pionnier oublié</div>
+            <p class="rc-text">Le Minitel offrait déjà du e-commerce, de la messagerie instantanée et des réseaux sociaux dans les années 1980. Des concepts "modernes" qui existaient 40 ans avant nos applications actuelles.</p>
+          </div>
+          <div class="reflection-card reflection-card--accent">
+            <div class="rc-icon">🔄</div>
+            <div class="rc-title">Le paradoxe du succès</div>
+            <p class="rc-text">Le succès du Minitel a ralenti l'adoption d'Internet en France. En technologie, une bonne solution peut devenir un obstacle. C'est un "legacy problem" que tout développeur connaît.</p>
+          </div>
+          <div class="reflection-card">
+            <div class="rc-icon">🔮</div>
+            <div class="rc-title">L'héritage numérique</div>
+            <p class="rc-text">Sans le Minitel, la société française n'aurait pas été préparée à l'ère numérique. Il a normalisé l'idée d'acheter, communiquer et s'informer par écran — une habitude qui dure jusqu'aujourd'hui.</p>
+          </div>
+        </div>
+
+        <div class="answer-box">
+          <div class="ans-label">RÉPONSE À LA QUESTION GUIDÉE</div>
+          <p class="ans-question">Comment le Minitel a-t-il changé la vie quotidienne en France avant l'arrivée d'Internet ?</p>
+          <p class="ans-text">Le Minitel a <strong>révolutionné la vie quotidienne française</strong> en introduisant les services numériques dans chaque foyer dès 1982 — 13 ans avant qu'Internet devienne populaire. Il a normalisé l'idée d'acheter, voyager, communiquer et s'informer via un écran, préparant ainsi toute une société à l'ère numérique.</p>
+        </div>
+
+        <div class="final-terminal">
+          <div class="ft-text">FIN DE SESSION MINITEL</div>
+          <div class="ft-text">MERCI D'AVOIR UTILISÉ LE RÉSEAU TRANSPAC</div>
+          <div class="ft-text ft-blink">À BIENTÔT SUR MINITEL — 1982 · 2012</div>
+          <div class="ft-credits">Présenté par <span id="author-name">[ Votre Nom ]</span> · Classe de Français</div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">3615 MINITEL</div>
+        <div class="footer-text">Minitel : L'Internet avant Internet · Classe de Français · 2025</div>
+        <div class="footer-text">France Télécom · Réseau Transpac · 1982–2012</div>
+      </div>
+    </footer>
+
+  </div><!-- end #main-site -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
