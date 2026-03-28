@@ -2,6 +2,9 @@
 
 > *Avant Google. Avant Facebook. Avant tout — il y avait le Minitel.*
 
+## Découvrez le projet ici
+https://josealma15.github.io/Minitel-FR/
+
 ---
 
 ## Qu'est-ce que c'est ?
